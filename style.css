@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: 'outfit';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone-100);
+    position: relative;
+    min-height: 100vh;
+}
+.card{
+    padding: 40px;
+    background-color: var(--White);
+    border-radius: 20px;
+    max-width: 730px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img_holder{
+    width: 100%;
+}
+.img_holder img{
+    border-radius: 10px;
+}
+.heading{
+    font-family: 'young serif';
+    font-weight: 400;
+    color: var(--Brown-800);
+    margin-bottom: 20px;
+}
+.descreption h1{
+    color: var(--Stone-900);
+}
+p , li , span{
+    font-size: 16px;
+    color: var(--Stone-600);
+    font-weight: 400;
+    line-height: 12 0%;
+}
+.sp-li{
+    color: var(--Stone-900);
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+ul div{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    margin: 10px;
+}
+.list{
+    font-size: 20px;
+    color: var(--Rose-800);
+    font-weight: 600;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.list .dot{
+    width: 5px;
+    height: 5px;
+    background-color: var(--Rose-800);
+    border-radius: 50%;
+}
+.R-section{
+    border-bottom: 1px solid var(--Stone-150);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.list .sp{
+    width: 3px;
+    height: 3px;
+    margin-left: 3px;
+    margin-top: 12px;
+}
+.details h3{
+    color: var(--Rose-800);
+    font-size: 16px;
+    font-family: 'outfit';
+    font-weight: 600;
+}
+.details{
+    padding: 20px;
+    background-color: var(--Rose-50);
+    border-radius: 5px;
+}
+
+.R-sp{
+    border: none;
+    padding: 0;
+}
+.nutrition-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--Stone-150);
+}
+.nutrition-value:nth-child(4){
+    border: none;
+    padding-bottom: 0;
+}
+.nutrition-value p{
+    width: 60px;
+}
+.nutrition-value h4 {
+    font-family: 'outfit';
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+@media (max-width:580px) {
+    .card{
+        padding: 0;
+    }
+    .details , .descreption , .R-section{
+        margin: 0 40px;
+    }
+}
